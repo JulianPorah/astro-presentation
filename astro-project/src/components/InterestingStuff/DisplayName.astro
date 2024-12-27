@@ -1,0 +1,34 @@
+---
+interface Props {
+    firstName: string;
+    surName: string;
+}
+const {firstName = "default", surName = "default"} = Astro.props;
+let counter = 0;
+
+const animalsArray = ["Dog", "Cat", "Bear", "Bird"];
+---
+
+<h2>Name: {firstName}, Surname: {surName}</h2>
+<slot name="firstSlot"/>
+<!-- Alle Elemente mit dem Slot-Namen firstSlot werden hier angezeigt -->
+<slot/>
+<!-- Alle Elemente innerhalb der Komponente werden hier angezeigt -->
+<slot name="fallback">
+    <p>Fallback, wenn nichts mitgegeben wird für den Slot</p>
+</slot>
+
+{animalsArray.map((value: any) =>
+<pre>{value}</pre>)}
+
+<button id="increaseCounter">Drück mich</button>
+<p id="counterDisplay">{counter}</p>
+
+<script>
+    let counter = document.getElementById("counterDisplay");
+    let counterValue = parseInt(counter!!.innerHTML) + 1;
+    const button = document.getElementById("increaseCounter");
+    button!!.addEventListener("click", () => {
+        counter!!.innerHTML = String(counterValue++);
+    });
+</script>

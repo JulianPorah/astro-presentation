@@ -1,5 +1,20 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
+
+import node from "@astrojs/node";
+
+import vue from "@astrojs/vue";
+
+import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+    experimental: {
+        svg: true,
+    },
+    adapter: node({
+        mode: "standalone",
+    }),
+    output: "server",
+    integrations: [vue(), svelte()],
+});

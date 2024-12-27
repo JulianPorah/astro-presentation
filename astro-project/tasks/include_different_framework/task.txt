@@ -1,1 +1,13 @@
-You can integrate different frameworks inside Astro. Choose one and create one components and use it
+You can integrate different frameworks inside Astro. First you have to include the frameworks.
+It is pretty simple just go in the terminal and type in 'npx astro add nameofframework'.
+Task:
+1.Include one Vue component and svelte component then display it in the index.astro.
+2. Include client:only="svelte" to the svelte component and client:only="vue" to the vue component.
+If you want you can switch it to see that the components are not beeing loaded or loading something else then the component (for example: [object Object]).
+It only renders when the framework name is the same then the component
+
+This is called Template directives reference:
+https://docs.astro.build/de/reference/directives-reference/
+
+If you need help to include the frameworks:
+https://docs.astro.build/de/guides/integrations-guide/svelte/

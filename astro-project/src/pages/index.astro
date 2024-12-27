@@ -1,11 +1,22 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
+import Welcome from "../components/Welcome.astro";
+import VueComponent from "../components/NewTest.vue";
+import Layout from "../layouts/Layout.astro";
+import NewSvelte from "../components/newSvelte.svelte";
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import PlayButton from "../assets/play.svg";
 ---
 
 <Layout>
-	<Welcome />
+  <Welcome />
+  <VueComponent client:media="(max-width: 500px)" />
+  <VueComponent client:load />
+  <VueComponent client:idle={{ timeout: 5000 }} />
+  <VueComponent client:only="svelte" />
+
+  <NewSvelte client:media="(max-width: 500px)" />
+  <NewSvelte client:load />
+  <NewSvelte client:idle={{ timeout: 5000 }} />
+  <NewSvelte client:only="vue" />
 </Layout>

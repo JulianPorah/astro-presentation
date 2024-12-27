@@ -1,0 +1,5 @@
+Inside the pages directory you find a file ServerSideRendering, open it and check the code.
+When you look at the code you will wonder what server:prefer stands for?
+It means that the component is a server island and will be loaded after the static page is beeing loaded from the server.
+First of all it will load the default, because we are not getting anything back from the server.
+But when we get something it will display the response from the server
