@@ -1,6 +1,6 @@
 ---
 const response = await fetch("https://pokeapi.co/api/v2/pokemon/charizard");
-const jsonResonse = await response.json();
+const jsonResponse = await response.json();
 
 await new Promise((resolve) => setTimeout(resolve, 2000));
 //Its here because it shows that we can load from a server. Else it would be to fast.
@@ -8,7 +8,7 @@ await new Promise((resolve) => setTimeout(resolve, 2000));
 ---
 
 <div>
-  <h1>{jsonResonse.name}</h1>
+  <h1>{jsonResponse.name}</h1>
   <!--Here is an example of not correct Accessibility, because the alt tag is missing. You will see this inside the browser. fix it if you want :) -->
-  <img src={jsonResonse.sprites.front_default} />
+  <img src={jsonResponse.sprites.front_default} />
 </div>

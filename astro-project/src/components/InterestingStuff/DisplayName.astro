@@ -14,14 +14,11 @@ const animalsArray = ["Dog", "Cat", "Bear", "Bird"];
 <!-- Alle Elemente mit dem Slot-Namen firstSlot werden hier angezeigt -->
 <slot/>
 <!-- Alle Elemente innerhalb der Komponente werden hier angezeigt -->
-<slot name="fallback">
-    <p>Fallback, wenn nichts mitgegeben wird für den Slot</p>
-</slot>
 
 {animalsArray.map((value: any) =>
 <pre>{value}</pre>)}
 
-<button id="increaseCounter">Drück mich</button>
+<button id="increaseCounter">Klick mich</button>
 <p id="counterDisplay">{counter}</p>
 
 <script>

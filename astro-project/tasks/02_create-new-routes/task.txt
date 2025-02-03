@@ -1,5 +1,9 @@
 Every new component inside the pages directory is a new route.
 if you create a new directory inside pages then we have / path
+for example:
+pages/newDirectory/newAstroFile.astro           <-- the directory
+http://localhost:4321/newDirectory/newAstroFile <-- new Url path
 
+tasks:
 create one new route inside the pages directory
 create one new directory and component inside in the pages directory

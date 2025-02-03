@@ -10,13 +10,7 @@ import PlayButton from "../assets/play.svg";
 
 <Layout>
   <Welcome />
-  <VueComponent client:media="(max-width: 500px)" />
-  <VueComponent client:load />
-  <VueComponent client:idle={{ timeout: 5000 }} />
-  <VueComponent client:only="svelte" />
+  <VueComponent client:only="vue" />
 
-  <NewSvelte client:media="(max-width: 500px)" />
-  <NewSvelte client:load />
-  <NewSvelte client:idle={{ timeout: 5000 }} />
   <NewSvelte client:only="vue" />
 </Layout>

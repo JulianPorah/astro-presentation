@@ -1,5 +1,0 @@
-you can create multiple routes inside one file with dynamic routing
-create a new directory and inside it a new astro file and create 3 new routes inside one file
-
-hint:
-https://docs.astro.build/de/guides/routing/

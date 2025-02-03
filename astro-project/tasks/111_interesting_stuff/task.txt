@@ -1,2 +1,2 @@
 Inside the interestingStuff.astro you will see some standart stuff like props etc.
-Look into the code and ask questions if you have it :)
+Look into the code and ask questions if you want :)

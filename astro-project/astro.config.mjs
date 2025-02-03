@@ -12,9 +12,6 @@ export default defineConfig({
     experimental: {
         svg: true,
     },
-    adapter: node({
-        mode: "standalone",
-    }),
     output: "server",
     integrations: [vue(), svelte()],
 });
