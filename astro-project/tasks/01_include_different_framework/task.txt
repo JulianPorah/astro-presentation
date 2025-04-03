@@ -1,6 +1,6 @@
 In Astro kann man verschiedene Frameworks einbinden.
 Aufgaben:
-1.Erstelle eine neue Vue und Svelte Komponente in dem components Ordner und füge sie in der index.astro
+1. Erstelle eine neue Vue und Svelte Komponente in dem components Ordner und füge sie in der index.astro
 2. Schreibe dazu das attribute client:only="svelte" und dasselbe mit vue
 Probiere gerne aus warum wir das attribute hinzufügen
 

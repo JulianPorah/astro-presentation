@@ -1,10 +1,4 @@
-Inside the pages directory you find a file ServerSideRendering, open it and check the code.
-When you look at the code you will wonder what server:prefer stands for?
-It means that the component is a server island and will be loaded after the static page is beeing loaded from the server.
-First of all it will load the default, because we are not getting anything back from the server.
-But when we get something it will display the response from the server
-
-In dem pages Ordner findet ihr die ServerSideRendering.astro. Öffnet sie und schaut euch den Code an
+In dem pages Ordner findet ihr die MultipleIsland.astro. Öffnet sie und schaut euch den Code an
 Wenn man sich den Code anschaut fällt einem relativ schnell das Attribut server:prefer auf
 Es bedeutet, dass die Komponente als Insel geladen wird.
 Sie werden erst nach den Statischen Seiten geladen
