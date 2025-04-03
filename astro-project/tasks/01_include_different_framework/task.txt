@@ -1,12 +1,11 @@
-You can integrate different frameworks inside Astro. First you have to include the frameworks.
-Task:
-1.Include one Vue and svelte component inside the components folder. Then display it in the index.astro.
-2. Include client:only="svelte" to the svelte component and client:only="vue" to the vue component.
-If you want you can switch it to see that the components are not beeing loaded or loading something else then the component (for example: [object Object]).
-It only renders when the framework name is the same then the component
+In Astro kann man verschiedene Frameworks einbinden.
+Aufgaben:
+1.Erstelle eine neue Vue und Svelte Komponente in dem components Ordner und füge sie in der index.astro
+2. Schreibe dazu das attribute client:only="svelte" und dasselbe mit vue
+Probiere gerne aus warum wir das attribute hinzufügen
 
-This is called Template directives reference:
-https://docs.astro.build/de/reference/directives-reference/
-
-If you need help to include the frameworks:
-https://docs.astro.build/de/guides/integrations-guide/svelte/
+Warum müssen wir client:only benutzen?
+1. Überspringt es das rendern auf dem Server und rendert somit auf dem Client
+2. Wir müssen den Framework-Namen übergeben, weil Astro nicht
+die Komponenten auf dem Server lädt und somit nicht weißt
+welches Framework man benutzt, außer man sagt ihm das explicit

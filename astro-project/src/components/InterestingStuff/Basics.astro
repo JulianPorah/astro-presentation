@@ -1,0 +1,57 @@
+---
+// Alles in den --- Bereich nennt man Frontmatter
+
+//Möglichkeiten Props zu schreiben
+interface Props {
+    firstName: string;
+    surName: string;
+}
+//Falls man mit der interface schreibweise arbeitet, brauch man folgende Zeile. Kann auch ohne standard Wert geschrieben werden :)
+const {firstName = "default", surName = "default"} = Astro.props;
+let counter = 0;
+
+const animalsArray = ["Dog", "Cat", "Bear", "Bird"];
+
+const visible = true;
+---
+
+<h2>Name: {firstName}, Surname: {surName}</h2>
+<!-- Folgende Schreibweise kann man auch schreiben -->
+<h2>Name: {Astro.props.firstName}, Surname: {Astro.props.surName}</h2>
+
+{
+    animalsArray.map((value: string) =>
+    <pre>{value}</pre>)
+    }
+
+<!-- Beispiele für Conditional Rendering -->
+{visible ? (
+<p>Es wird ausgegeben</p>
+    ) : (
+<p>Es wird nicht ausgegeben</p>
+    )}
+
+{
+    ()=>{
+        if (visible) {
+            return <p>Es wird auch ausgegeben</p>
+            }
+        return <p>Es wird auch nicht ausgegeben</p>
+        }
+    }
+
+<button id="increaseCounter">Klick mich</button>
+<p id="counterDisplay">{counter}</p>
+
+<script>
+    // Es gibt keine click Methoden deswegen muss man es selbst mit Vanilla Javascript machen
+    let counter = document.getElementById("counterDisplay");
+    let counterValue = parseInt(counter!!.innerHTML) + 1;
+    const button = document.getElementById("increaseCounter");
+    button!!.addEventListener("click", () => {
+        counter!!.innerHTML = String(counterValue++);
+    });
+    // Wir haben es hier drinnen damit Astro weiß, dass es auf dem client laufen soll.
+    // Wenn wir es nach oben in den Frontmatter rein packen würden, würde es nicht funktionieren, weil
+    // das Frontmatter nur zur Build Zeit Verfügung steht
+</script>

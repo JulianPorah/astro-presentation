@@ -1,10 +1,15 @@
-you can create multiple routes inside one file with dynamic routing.
-Inside your frontmatter you will be using the function getStaticPaths() that returns an array of objects
+Man kann mehrere Routen in einer Astro Datei erstellen mithilfe von dynamischen Routing
 
-tasks:
-1. Create a new directory with the name Employee and a astrofile with the name [employeeName].astro
-2. Inside the [employeeName].astro use the function getStaticPaths() and return an array of objects.
-Inside the object use { params: { employeeName: 'Julian',  },props: { someString: "Moin" }, }
-Now you have a new Route:http://localhost:4321/Employee/Julian
-hint:
+Aufgaben:
+1. Erstelle ein neues Verzeichnis mit dem Namen Employee und dazu eine Astrofile mit dem Namen [employeeName].astro
+2. In der [employeeName].astro Datei benutze die Funktion getStaticPaths und gebe ein Array von Objekten zurück
+In den Objekt benutze { params: { employeeName: 'name'  },props: { someString: "Moin" }, }
+Jetzt hast du eine neue Route, die du über http://localhost:4321/Employee/name aufrufen kannst
+3. Ergänzt bei den Props noch ein Array mit dem Namen programmingLanguageList
+und tragt da ein paar Programmiersprachen ein die Ihr könnt
+
+Falls du hilfe brauchst hier ein Hinweis oder einfach fragen
 https://docs.astro.build/de/guides/routing/
+
+In dem Frontmatter benutzt man die Funktion getStaticPaths()
+Diese Funktion soll ein Array von Objekten zurückgeben

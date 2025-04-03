@@ -1,16 +1,9 @@
 ---
 import Welcome from "../components/Welcome.astro";
-import VueComponent from "../components/NewTest.vue";
 import Layout from "../layouts/Layout.astro";
-import NewSvelte from "../components/newSvelte.svelte";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
-import PlayButton from "../assets/play.svg";
+//Das hier ist die Komponente der Startseite und wird auf der Route / aufgerufen
 ---
 
 <Layout>
   <Welcome />
-  <VueComponent client:only="vue" />
-
-  <NewSvelte client:only="vue" />
 </Layout>

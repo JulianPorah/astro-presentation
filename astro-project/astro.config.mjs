@@ -9,9 +9,9 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-    experimental: {
-        svg: true,
-    },
-    output: "server",
-    integrations: [vue(), svelte()],
+  experimental: {
+    svg: true,
+  },
+  output: "server",
+  integrations: [vue(), svelte()],
 });

@@ -1,0 +1,28 @@
+---
+const { pokemonName } = Astro.props;
+let pokemonData = null;
+let error = null;
+
+try {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+    pokemonData = await response.json();
+} catch (err) {
+    error = 'Fehler beim Laden der Pokémon-Daten.';
+}
+
+await new Promise(resolve => setTimeout(resolve, 3000));
+---
+
+<div>
+    {error && <p>{error}</p>}
+    {pokemonData ? (
+            <div>
+                <h2>{pokemonData.name}</h2>
+                <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />
+            </div>
+    ) : (
+            <p>Pokémon Daten werden geladen</p>
+    )}
+</div>
+
+<style scoped></style>

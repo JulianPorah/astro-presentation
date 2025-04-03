@@ -1,0 +1,13 @@
+---
+import Basics from "../components/InterestingStuff/Basics.astro";
+const fontSize = "2rem";
+---
+<!-- Komponenten aufruf mit props -->
+<Basics firstName="Julian" surName="Porath">
+</Basics>
+
+<style scoped define:vars={{fontSize}}> //Übergeben der Variable in das CSS
+    h4 {
+        font-size: var(--fontSize);
+    }
+</style>

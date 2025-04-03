@@ -1,0 +1,46 @@
+---
+export const prerender = true;
+export function getStaticPaths() {
+    return [
+        {
+            params: {employeeName: 'Julian'},
+            props: {
+                someRandomString: "Moin",
+                programmingLanguageList: ["Typescript", "Go", "Kotlin"]
+            },
+        },
+        {
+            params: {employeeName: 'Max'},
+            props: {
+                someRandomString: "Erneutes Moin",
+                programmingLanguageList: ["Elm", "Go", "Kotlin","PHP"]
+            },
+        }
+    ];
+}
+
+interface Props {
+    someRandomString: string;
+    programmingLanguageList: string[]
+}
+
+const {employeeName} = Astro.params;
+
+const {programmingLanguageList,someRandomString} = Astro.props as Props;
+---
+<h1>{employeeName}</h1>
+<h1>{someRandomString}</h1>
+
+<div>
+    <h2>Liste von Programmiersprachen</h2>
+    <ul>
+        {programmingLanguageList.map(value =>
+                <li class="listElement">{value}</li>)}
+    </ul>
+</div>
+
+<style scoped>
+    .listElement {
+        font-size: 1.2rem;
+    }
+</style>

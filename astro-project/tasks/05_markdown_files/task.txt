@@ -1,0 +1,7 @@
+Astro hat eine ziemlich gute Markdown einbindung.
+
+Aufgabe:
+1. Erstellt einen neuen Post mithilfe einer Markdown File.
+2. Schaut euch diese danach im Browser an
+
+Habe hier nicht so viel geschrieben, damit ihr ein bisschen selbst überlegen müsst :)
