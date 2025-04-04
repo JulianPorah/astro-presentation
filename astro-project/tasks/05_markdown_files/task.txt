@@ -4,6 +4,7 @@ Aufgabe:
 1. Erstellt einen neuen Post mithilfe einer Markdown File.
 2. Schaut euch diese danach im Browser an
 3. Baut eine Erweiterung in den frontmatter Part von der Markdown file ein.
+   Nicht vergessen es im Quellcode auch zu ändern.
    Es ist euch überlassen was und wie viel ihr dort einbauen/verändern wollt.
 
 Könnt eurer Kreativität freien lauf lassen, weil es die letzte Aufgabe ist.
