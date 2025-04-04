@@ -3,14 +3,19 @@ Dynamisches Routen
 Aufgaben:
 1. Erstelle ein neues Verzeichnis mit dem Namen employeeName und dazu eine Astrofile mit dem Namen [employeeName].astro
 2. In der [employeeName].astro Datei benutze die Funktion getStaticPaths und gebe erstmal ein leeres Array zurück.
+Außerdem exportiere diese Funktion, weil es ansonsten nicht funktioniert.
+
+Folgende Information dienen zur Hilfe, weil ihr sonst Recherchieren müsstet oder mich fragen müsstet.
+Falls ihr mehr alleine arbeiten wollt, gerne ignorieren. :)
+
 In dem Array benutze { params: { employeeName: 'name'  },props: { someString: "Moin" } }
-Jetzt hast du eine neue Route, die du über http://localhost:4321/Employee/name aufrufen kannst
+Jetzt hast du eine neue Route, die du über http://localhost:4321/employeeName/name aufrufen kannst
 3. Ergänzt bei den Props noch ein Array mit dem Namen programmingLanguageList
 und tragt da ein paar Programmiersprachen ein, die Ihr könnt
-4. Gebe alle Props und Parameter aus
+4. Gebe alle Props und Parameter auf der Seite aus.
 
 Eine Neuheit sind hier die params. Gerne selbst probieren, mich Fragen oder in den Docs schauen.
 
-Falls du hilfe brauchst hier ein Hinweis oder einfach fragen.
+Hier sind die Docs
 https://docs.astro.build/de/guides/routing/
 

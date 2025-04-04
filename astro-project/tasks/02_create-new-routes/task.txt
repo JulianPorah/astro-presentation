@@ -5,4 +5,3 @@ http://localhost:4321/neueKomponente
 Aufgabe
 1. Erstelle eine neue Komponente und rufe sie im Browser auf
 2. Erstelle einen neuen Ordner mit einer neuen Komponente drinnen und rufe die neue Route auf
-
