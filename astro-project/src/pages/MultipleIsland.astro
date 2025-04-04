@@ -1,6 +1,5 @@
 ---
 import PokemonCard from "../components/PokemonCard.astro";
-import PokemonStats from "../components/PokemonStats.astro";
 import VeryCoolFooter from "../components/StaticFooter.astro";
 //Server defer sagt aus, das wenn man es nicht hat man auf alles wartet also auf alle responses
 //Und wenn es da ist wird es ausgegeben wenn es zur verfügung steht und man wartet nicht auf alles
@@ -13,10 +12,6 @@ import VeryCoolFooter from "../components/StaticFooter.astro";
   <!-- nehmt das server:defer gerne weg und schaut was passiert -->
   <div slot="fallback">Laedt Pokemon</div>
 </PokemonCard>
-
-<PokemonStats pokemonName="charizard" server:defer>
-  <div slot="fallback">Laedt Stats</div>
-</PokemonStats>
 
 <VeryCoolFooter></VeryCoolFooter>
 

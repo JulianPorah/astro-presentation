@@ -1,3 +1,3 @@
-In der Basics.astro sind Baisc sachen wie Props enthalten.
+In der Basics.astro sind Basic sachen wie Props enthalten.
 Wir rufen die Komponente in der Basics Syntax auf.
 Schat euch die Files an und stellt fragen wenn es welche gibt :)

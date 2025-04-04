@@ -1,5 +1,5 @@
 Jede Komponente in dem pages Ordner ist eine neue Route
-Wenn wir die Komponente = neueKomponente.astro haben dann ist die Route so aus:
+Wenn wir die Komponente neueKomponente.astro haben dann sieht die Route so aus:
 http://localhost:4321/neueKomponente
 
 Aufgabe

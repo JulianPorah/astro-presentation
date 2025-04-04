@@ -3,5 +3,7 @@ Astro hat eine ziemlich gute Markdown einbindung.
 Aufgabe:
 1. Erstellt einen neuen Post mithilfe einer Markdown File.
 2. Schaut euch diese danach im Browser an
+3. Baut eine Erweiterung in den frontmatter Part von der Markdown file ein.
+   Es ist euch überlassen was und wie viel ihr dort einbauen wollt.
 
 Habe hier nicht so viel geschrieben, damit ihr ein bisschen selbst überlegen müsst :)

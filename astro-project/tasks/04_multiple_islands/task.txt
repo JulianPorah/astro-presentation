@@ -1,13 +1,12 @@
 In dem pages Ordner findet ihr die MultipleIsland.astro. Öffnet sie und schaut euch den Code an
-Wenn man sich den Code anschaut fällt einem relativ schnell das Attribut server:prefer auf
-Es bedeutet, dass die Komponente als Insel geladen wird.
-Sie werden erst nach den Statischen Seiten geladen
-Als erstes wird der default geladen und wenn es eine Antwort gibt, bekommt er eine Antwort von dem Server zurück
 
-In der ServerSideRendering.astro seht ihr eine eingebundene Komponente, die eine Insel ist
-Und eine Komponente die ein footer ist und statisches HTML ist.
+Es wird die Komponente PokemonCard
 
 Aufgaben:
-1. Erstellt ein neue Komponente die Pokemon Stats ausgeben soll
+1. Erstellt eine neue Komponente die Pokemon Stats ausgeben soll
 2. Die Komponente soll auch einen default haben.
     Damit der default auch genutzt wird, bitte ein await einbauen :)
+
+Info:
+Ihr sollt einen Request an die Pokemon Api machen
+Genau denselben der auch schon in der PokemonCard genutzt wird
