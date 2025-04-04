@@ -1,5 +1,5 @@
 ---
-const { pokemonName } = Astro.props;
+const {pokemonName} = Astro.props;
 
 let pokemonData = null;
 let error = null;
@@ -16,14 +16,17 @@ await new Promise(resolve => setTimeout(resolve, 3000));
 
 <div>
     {error && <p>{error}</p>}
-    {pokemonData ? (
-            <div>
-                <h2>{pokemonData.name}</h2>
-                <img src={pokemonData.sprites.front_default} alt={pokemonData.name} />
-            </div>
-    ) : (
-            <p>Pokémon Daten werden geladen</p>
-    )}
+
+    {
+        pokemonData ? (
+                <div>
+                    <h2>{pokemonData.name}</h2>
+                    <img src={pokemonData.sprites.front_default} alt={pokemonData.name}/>
+                </div>
+        ) : (
+                <p>Pokémon Daten werden geladen</p>
+        )
+    }
 </div>
 
 <style scoped></style>

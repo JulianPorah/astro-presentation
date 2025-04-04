@@ -25,14 +25,15 @@ const visible = true;
     }
 
 <!-- Beispiele für Conditional Rendering -->
-{visible ? (
+{ visible ? (
 <p>Es wird ausgegeben</p>
-    ) : (
+    ) :(
 <p>Es wird nicht ausgegeben</p>
-    )}
+    )
+    }
 
 {
-    ()=>{
+    ()=> {
         if (visible) {
             return <p>Es wird auch ausgegeben</p>
             }
