@@ -2,7 +2,8 @@ Zusatzaufgabe
 
 Aufgaben:
 1. Schreibe eine neue Komponente, die du später im Blog mit angezeigt bekommst.
-   Die Daten für die Komponente sollen aus der Markdown Datei kommen
+   Die Daten für die Komponente sollen aus der Markdown Datei kommen.
+   Gerne auch ein paar mehr Daten nutzen damit es schwerer wird ;)
 
 Thema der Komponente ist egal, es geht nur darum, dass die Komponente im jeden Blog angezeigt wird
 Könnt eurer Kreativität freien lauf lassen
